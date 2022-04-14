@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab_prac/rcipe_list.dart';
+import 'package:lab_prac/stack_prac.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: RecipeList(),
+      home: const Stack_prac(),
     );
   }
 }
