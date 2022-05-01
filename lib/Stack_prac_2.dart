@@ -7,98 +7,352 @@ class Stack_prac_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SizedBox(
-          width: 400,
-          height: 400,
-          child: Stack(
-            // alignment: const Alignment(2, 2),
-            children: <Widget>[
-              Container(
-                // alignment: Alignment.center,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(12.0),
-                  child: const Image(
-                    image: AssetImage("assets/girl.jpg"),
-                    fit: BoxFit.cover,
-                    width: 400,
-                    height: 300,
+        child: GridView.extent(
+          // alignment: const Alignment(2, 2),
+          primary: false,
+          padding: const EdgeInsets.all(16),
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          maxCrossAxisExtent: 400.0,
+          children: <Widget>[
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                ),
-              ),
-              Container(
-                  margin: const EdgeInsets.only(bottom: 50),
-                  child: Row(
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        SizedBox(
-                          width: 7,
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
                         ),
-                        Text(
-                          'Carrier',
-                          style: TextStyle(color: Colors.white),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.wifi,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 105,
-                        ),
-                        Text(
-                          '7:30 pm',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        SizedBox(
-                          width: 125,
-                        ),
-                        Icon(
-                          Icons.battery_full,
-                          color: Colors.white,
-                        ),
-                      ])),
-              Container(
-                padding: const EdgeInsets.only(top: 25.0),
-                // decoration: const BoxDecoration(
-                //   color: Colors.black45,
-
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.chevron_left,
-                      color: Colors.white,
+                      ],
                     ),
-                    SizedBox(
-                      width: 300,
-                    ),
-                    Icon(
-                      Icons.edit,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Icon(
-                      Icons.more_vert,
-                      color: Colors.white,
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.only(top: 250, left: 140),
-                child: const Text(
-                  'Full Name',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 255, 252, 252),
-                    fontSize: 20.0,
+                    color: const Color.fromARGB(94, 0, 0, 0),
                   ),
-                ),
+                ],
               ),
-            ],
-          ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    color: const Color.fromARGB(94, 0, 0, 0),
+                  ),
+                ],
+              ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    color: const Color.fromARGB(94, 0, 0, 0),
+                  ),
+                ],
+              ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    color: const Color.fromARGB(94, 0, 0, 0),
+                  ),
+                ],
+              ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    color: const Color.fromARGB(94, 0, 0, 0),
+                  ),
+                ],
+              ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    color: const Color.fromARGB(94, 0, 0, 0),
+                  ),
+                ],
+              ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    height: 350,
+                    child: const Image(
+                      image: AssetImage(
+                        'assets/food_1.jpeg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(top: 150),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(left: 15, top: 10),
+                          child: Column(
+                            children: const [
+                              Text(
+                                'data',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text('data2',
+                                  style: TextStyle(color: Colors.white))
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(left: 120),
+                          child: const Icon(
+                            Icons.star_border,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    color: const Color.fromARGB(94, 0, 0, 0),
+                  ),
+                ],
+              ),
+              color: const Color.fromARGB(26, 0, 0, 0),
+            ),
+            Container(
+              child: const Text('data'),
+              color: Colors.amber,
+            ),
+            Container(
+              child: const Text('data'),
+              color: Colors.amber,
+            ),
+          ],
         ),
       ),
     );
